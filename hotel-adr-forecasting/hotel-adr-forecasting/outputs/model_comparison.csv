@@ -1,0 +1,6 @@
+,MAE,RMSE,R2,MAPE_%
+Mean predictor,24.885,31.289,-0.0003,25.94
+Linear Regression,12.481,15.581,0.7519,12.56
+Random Forest (default),11.628,14.586,0.7826,11.61
+Tuned Gradient Boosting,10.589,13.254,0.8205,10.69
+Tuned Random Forest,10.979,13.765,0.8064,11.05

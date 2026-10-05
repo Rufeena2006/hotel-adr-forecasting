@@ -1,0 +1,170 @@
+{
+  "data_source": "synthetic",
+  "n_rows": 18877,
+  "results": {
+    "Mean predictor": {
+      "MAE": 24.885,
+      "RMSE": 31.289,
+      "R2": -0.0003,
+      "MAPE_%": 25.94
+    },
+    "Linear Regression": {
+      "MAE": 12.481,
+      "RMSE": 15.581,
+      "R2": 0.7519,
+      "MAPE_%": 12.56
+    },
+    "Random Forest (default)": {
+      "MAE": 11.628,
+      "RMSE": 14.586,
+      "R2": 0.7826,
+      "MAPE_%": 11.61
+    },
+    "Tuned Gradient Boosting": {
+      "MAE": 10.589,
+      "RMSE": 13.254,
+      "R2": 0.8205,
+      "MAPE_%": 10.69
+    },
+    "Tuned Random Forest": {
+      "MAE": 10.979,
+      "RMSE": 13.765,
+      "R2": 0.8064,
+      "MAPE_%": 11.05
+    }
+  },
+  "champion": "Tuned Gradient Boosting",
+  "best_params": {
+    "m__l2_regularization": 1.6043939615080793,
+    "m__learning_rate": 0.024474191622376084,
+    "m__max_iter": 720,
+    "m__max_leaf_nodes": 15,
+    "m__min_samples_leaf": 17
+  },
+  "cv_rmse_tuned_gb": 13.316,
+  "top_features": {
+    "reserved_room_type": 17.428,
+    "market_segment": 7.991,
+    "month_sin": 4.927,
+    "hotel": 4.888,
+    "total_guests": 3.577,
+    "month_cos": 1.68,
+    "arrival_date_week_number": 0.713,
+    "lead_time": 0.489
+  },
+  "segment_error": [
+    {
+      "market_segment": "Corporate",
+      "MAE": 11.21,
+      "mean_adr": 93.47,
+      "n": 373
+    },
+    {
+      "market_segment": "Direct",
+      "MAE": 10.31,
+      "mean_adr": 116.85,
+      "n": 514
+    },
+    {
+      "market_segment": "Groups",
+      "MAE": 11.12,
+      "mean_adr": 88.94,
+      "n": 355
+    },
+    {
+      "market_segment": "Offline TA/TO",
+      "MAE": 10.71,
+      "mean_adr": 102.06,
+      "n": 733
+    },
+    {
+      "market_segment": "Online TA",
+      "MAE": 10.38,
+      "mean_adr": 121.27,
+      "n": 1801
+    }
+  ],
+  "hotel_error": [
+    {
+      "hotel": "City Hotel",
+      "MAE": 10.53,
+      "mean_adr": 114.3
+    },
+    {
+      "hotel": "Resort Hotel",
+      "MAE": 10.67,
+      "mean_adr": 106.69
+    }
+  ],
+  "monthly": [
+    {
+      "month": "January",
+      "actual": 97.79,
+      "pred": 99.05
+    },
+    {
+      "month": "February",
+      "actual": 96.98,
+      "pred": 97.1
+    },
+    {
+      "month": "March",
+      "actual": 101.47,
+      "pred": 101.76
+    },
+    {
+      "month": "April",
+      "actual": 105.42,
+      "pred": 106.42
+    },
+    {
+      "month": "May",
+      "actual": 112.3,
+      "pred": 112.41
+    },
+    {
+      "month": "June",
+      "actual": 117.56,
+      "pred": 118.3
+    },
+    {
+      "month": "July",
+      "actual": 125.49,
+      "pred": 124.62
+    },
+    {
+      "month": "August",
+      "actual": 130.86,
+      "pred": 128.43
+    },
+    {
+      "month": "September",
+      "actual": 124.55,
+      "pred": 124.76
+    },
+    {
+      "month": "October",
+      "actual": 113.69,
+      "pred": 114.03
+    },
+    {
+      "month": "November",
+      "actual": 105.57,
+      "pred": 105.69
+    },
+    {
+      "month": "December",
+      "actual": 101.92,
+      "pred": 101.38
+    }
+  ],
+  "business": {
+    "test_revenue_actual": 1547261.0,
+    "pricing_error_exposure_baseline_LR": 172622.0,
+    "pricing_error_exposure_tuned": 146152.0,
+    "exposure_reduction_pct": 15.3,
+    "baseline_exposure_pct_of_revenue": 11.16,
+    "tuned_exposure_pct_of_revenue": 9.45
+  },
+  "runtime_sec": 293.7
+}
